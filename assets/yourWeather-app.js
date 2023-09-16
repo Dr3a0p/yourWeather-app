@@ -9,7 +9,7 @@ const WEATHER_ENDPOINT = OPEN_WEATHER_MAP_SERVER_URL +
 
 
 
-function manageCampaignsBasedOnWeatherForecast() {
+function WeatherForecast() {
   const nyWeather = getWeatherForecastForLocation('Toronto, CA');
 
   // Example 1: Use weather summary provided by OpenWeathermap.

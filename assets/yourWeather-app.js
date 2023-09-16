@@ -1,6 +1,6 @@
 function getWeatherData(location) {
     const apiKey = "a73de6ba12212b84834873e1b15a767d";
-    const url = 'api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}';
+    const url = 'api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={a73de6ba12212b84834873e1b15a767d}';
     fetch(queryURL)
       .then(response => response.json())
       .then(data => {
@@ -46,11 +46,12 @@ function getWeatherData(location) {
       cnt: '10'
     },
     success: function console.log(data) {
-      var wf = '';
+      var weatherData = '' ,
       $.each(data, function(index, val) {
-        wf += '<p><b>' + data.city.name + '</b><img src=http://openweathermap.org/img/w/' + data.list[0].weather.icon + '.png></p>' + data.list[0].main.temp + '&deg;C' + ' | ' + data.list[0].weather.main + ", " + data.list[0].weather.description
-      });
-      $("#showWeatherForcast").html(wf);
+        weatherforcast += '<p><b>' + data.city.name + '</b><img src=http://openweathermap.org/img/w/' + data.list[0].weather.icon + '.png></p>' + data.list[0].main.temp + '&deg;C' + ' | ' + data.list[0].weather.main + ", " + data.list[0].weather.description
+  }),
+     { 
+      $("#showWeatherForcast").html(weatherforcast)
     }
   });
   

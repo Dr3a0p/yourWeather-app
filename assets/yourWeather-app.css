@@ -1,0 +1,13 @@
+.weatherContainer {
+    border: 1px solid black;
+ }
+ 
+ .leftStyling {
+    text-align: left;
+    padding-left: 2%
+ }
+ 
+ .weatherBlock {
+    background-color: steelblue;
+    color: white;
+    margin: 1%};
